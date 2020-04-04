@@ -1,0 +1,21 @@
+extends layout
+block content
+  h2 Buscar estudiante por:
+  select(id= "opciones")
+    option(value="Estudiante") Estudiante
+    option(value="Escuela") Escuela
+    option(value="Municipio") Municipio
+    option(value="Promedio") Promedio
+  div(class="table-wrapper")
+    table(id="tablaBuscar")
+      tr
+        th Nombre
+        td Apellido Paterno
+        td Apellido Materno
+        td Más datos
+  script(src="/javascripts/jquery.js")
+  script(src="/javascripts/funciones.js")
+  link(rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css")
+  script(type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js")
+
+

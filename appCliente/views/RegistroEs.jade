@@ -1,0 +1,102 @@
+doctype html
+extends layout
+block content
+  h2 Formulario de Registro Estudiante
+  form(action="")
+    h3 Datos personales
+    div(class="row uniform 90%")
+      div(class="3u 12u$(xsmall)")
+        label Nombre:
+          input(type="text",id="nombre")
+      div(class="3u 12u$(xsmall)")
+        label Apellido Paterno:
+          input(type="text",id="apellidopaterno")
+      div(class="3u$ 12u$(xsmall)")
+        label Apellido Materno
+          input(type="text",id="apellidomaterno")
+      div(class="3u 12u$(xsmall)")
+        label Sexo:
+          select(name="datos3", size="1",id="sexo")
+            option(value="Masculino") Masculino
+            option(value="Femenino") Femenino
+            option(value="Indeterminado") Indeterminado
+      div(class="3u 12u$(xsmall)")
+        label Telefono
+          input(type="number",id="telefono")
+      div(class="3u 12u$(xsmall)")
+        label Email:
+          input(type="email",id="email")
+      div(class="3u$ 12u$(xsmall)")
+        label Celular:
+          input(type="number",id="celular")
+      br
+      br
+      br
+      br
+      div(class="3u$ 12u$(xsmall)")
+        h3 Dirección
+      div(class="3u 12u$(xsmall)")
+        label Calle:
+          input(type="text",id="calle")
+      div(class="3u 12u$(xsmall)")
+        label Colonia:
+          input(type="text",id="colonia")
+      div(class="3u 12u$(xsmall)")
+        label Municipio:
+          input(type="text",id="municipio")
+      div(class="3u 12u$(xsmall)")
+        label Estado:
+          input(type="text",id="estado")
+      div(class="3u 12u$(xsmall)")
+        label Pais:
+          input(type="text",id="pais")
+      div(class="3u$ 12u$(xsmall)")
+        label Postal Codigo:
+          input(type="number",id="codigopostal")
+      br
+      br
+      br
+      br
+      div(class="3u$ 12u$(xsmall)")
+        h3 Datos extra
+      div(class="3u 12u$(xsmall)")
+        label CURP
+          input(type="text",id="curp")
+      div(class="3u 12u$(xsmall)")
+        label Estatus:
+          select(id="estatus")
+            option(value="1") 1
+            option(value="0") 0
+      div(class="3u 12u$(xsmall)")
+        label Estado:
+          select(id="id_estado")
+      div(class="3u$ 12u$(xsmall)")
+        label Academico:
+          select(id="id_academico")
+      div(class="3u 12u$(xsmall)")
+        label Tutor:
+          select(id="id_tutor")
+      div(class="3u 12u$(xsmall)")
+        label Sangre:
+          select(id="sangre")
+            option(value="ap") A+
+            option(value="bp") B+
+            option(value="abp") AB+
+            option(value="op") O+
+            option(value="an") A-
+            option(value="bn") B-
+            option(value="abn") AB-
+            option(value="on") O-
+      div(class="3u 12u$(xsmall)")
+        label Alergia
+          input(type="text", id="alergia")
+      div(class="3u 12u$(xsmall)")
+        label Numero de seguro:
+          input(type="text",id="numeroseguro")
+    br
+    br
+    br
+    button(type="submit",class="button",id="boton") Enviar
+    input(type="button", value="Cancelar")
+  script(src="/javascripts/jquery.js")
+  script(src="/javascripts/funcionesAgregar.js")
